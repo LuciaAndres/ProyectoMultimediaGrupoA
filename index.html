@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>End of Mythos</title>
+<style>
+  .centrado {
+    text-align: center;
+  }
+  .box {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        padding: 4px;
+        background-color: red;
+        color: white;
+      }
+      .boton {
+	    flex: 1;
+	    margin: 0px;
+	  }
+	  .boton-flecha {
+	    background-color: #007bff;
+	    color: white;
+	    border: none;
+	    padding: 10px 20px;
+	    font-size: 16px;
+	    cursor: pointer;
+	    position: relative;
+	    overflow: hidden;
+	  }
+	  .boton-flecha::after {
+	  	flex: 1;
+	    margin: 5px;
+	    content: '';
+	    position: absolute;
+	    top: 50%;
+	    right: 5px;
+	    width: 0;
+	    height: 0;
+	    border-top: 6px solid transparent;
+	    border-bottom: 6px solid transparent;
+	    border-left: 6px solid white;
+	    transform: translateY(-50%);
+	  }
+      .botonera {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+</style>
+</head>
+<body>
+<div class="centrado">
+  <h1>End of Mythos</h1>
+  <div class="botonera">
+  <button class="boton">Menú:</button>
+  <button class="boton">Home</button>
+  <button class="boton">Donaciones</button>
+  <button class="boton">Social</button>
+  <button class="boton">FAQ</button>
+  <button class="boton">Info</button>
+  <button class="boton">Ayuda</button>
+</div>
+</div>
+</body>
+</html>
