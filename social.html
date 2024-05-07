@@ -19,46 +19,44 @@
 		        padding: 4px;
 		        background-color: red;
 		        color: white;
-		      }
-		      .boton {
+		    }
+		    .boton {
 			    flex: 1;
 			    margin: 0px;
-			  }
-			  	.container {
-		            display: flex;
-		            flex-direction: row;
-		            justify-content: space-between;
-		            align-items: center;
-		            padding: 20px;
-		        }
+	        }
+		  	.container {
+	            display: flex;
+	            flex-direction: row;
+	            justify-content: space-between;
+	            align-items: center;
+	            padding: 20px;
+	        }
+	        .video-container {
+	            flex: 1;
+	            margin-right: 20px;
+	        }
+		    .text-container {
+		         flex: 1;
+		         margin-left: 20px;
+		    }
 
-		        .video-container {
-		            flex: 1;
-		            margin-right: 20px;
-		        }
-
-		        .text-container {
-		            flex: 1;
-		            margin-left: 20px;
-		        }
-
-		        video {
-		            max-width: 100%;
-		            height: auto;
-		        }
-		      .botonera {
-				    width: 100%;
-				    display: flex;
-				    justify-content: space-between;
-					}
+		    video {
+		        max-width: 100%;
+		        height: auto;
+		    }
+		    .botonera {
+			    width: 100%;
+			    display: flex;
+			    justify-content: space-between;
+			}
 			.corner-text {
-			        top: 0; /* Posición arriba */
-			        left: 0; /* Posición a la derecha */
-			        background-color: #f1f1f1; /* Color de fondo */
-			        padding: 10px; /* Espacio alrededor del texto */
-			        border-bottom-left-radius: 10px; /* Bordes redondeados */
-			        font-size: 10px;
-			    }
+			    top: 0; /* Posición arriba */
+			    left: 0; /* Posición a la derecha */
+			    background-color: #f1f1f1; /* Color de fondo */
+			    padding: 10px; /* Espacio alrededor del texto */
+			    border-bottom-left-radius: 10px; /* Bordes redondeados */
+			    font-size: 10px;
+			}  
 		</style>
 		<link rel="stylesheet" href="main.css">
 	</head>
@@ -70,11 +68,26 @@
 		</div>
 		<div class="centrado">
 		  <h1>End of Mythos</h1>
+		  <h5>Aquí va el lema</h5>
 		  <div class="botonera">
 		  <button class="boton" onclick="CambiarVentana('index.html')">Home</button>
 		  <button class="boton"onclick="CambiarVentana('donaciones.html')">Donaciones</button>
 		  <button class="boton"onclick="CambiarVentana('social.html')">Social</button>
 		  <button class="boton"onclick="CambiarVentana('faq.html')">FAQ</button>
 		  <button class="boton"onclick="CambiarVentana('ayuda.html')">Ayuda</button>
+		</div>
+		<div>
+			<p>
+				Somos (-), un estudio de estudiantes de la URJC del grado de Diseño y Desarrollo de Videojuegos, de primer año.
+				<br>
+				<h3>Nuestras redes sociales: <br></h3>
+				Instagram:<br>
+				Twitter:<br>
+				Facebook:<br>
+				<h3>Contacta con nosotros:<br></h3>
+				Instagram:<br>
+				Correo:<br>
+				Teléfono:<br>
+			</p>
 		</div>
 </html>
