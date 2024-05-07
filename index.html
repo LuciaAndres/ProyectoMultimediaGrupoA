@@ -1,52 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>End of Mythos ppppp</title>
-<style>
-  .centrado {
-    text-align: center;
-  }
-  .box {
-        display: inline-block;
-        width: 70px;
-        height: 70px;
-        padding: 4px;
-        background-color: red;
-        color: white;
-      }
-      .boton {
-	    flex: 1;
-	    margin: 0px;
-	  }
-      .botonera {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-</style>
-</head>
-<body>
-<div class="centrado">
-  <h1>End of Mythos</h1>
-  <div class="botonera">
-  <button class="boton">Menú:</button>
-  <button class="boton">Home</button>
-  <button class="boton">Donaciones</button>
-  <button class="boton">Social</button>
-  <button class="boton">FAQ</button>
-  <button class="boton">Info</button>
-  <button class="boton">Ayuda</button>
-</div>
-<div>
-	<h2>Trailer promo</h2>
-    <video width="640" height="360" controls>
-        <source src="tu_video.mp4" type="video/mp4">
-        <!-- Si tu navegador no soporta el formato mp4, puedes agregar otras fuentes -->
-        <!-- <source src="tu_video.ogg" type="video/ogg"> -->
-        <!-- <source src="tu_video.webm" type="video/webm"> -->
-        Tu navegador no soporta el elemento de video.
-    </video>
-</div>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>End of Mythos ppppp</title>
+		<style>
+		  .centrado {
+		    text-align: center;
+		  }
+		  .box {
+		        display: inline-block;
+		        width: 70px;
+		        height: 70px;
+		        padding: 4px;
+		        background-color: red;
+		        color: white;
+		      }
+		      .boton {
+			    flex: 1;
+			    margin: 0px;
+			  }
+			  	.container {
+		            display: flex;
+		            flex-direction: row;
+		            justify-content: space-between;
+		            align-items: center;
+		            padding: 20px;
+		        }
+
+		        .video-container {
+		            flex: 1;
+		            margin-right: 20px;
+		        }
+
+		        .text-container {
+		            flex: 1;
+		            margin-left: 20px;
+		        }
+
+		        video {
+		            max-width: 100%;
+		            height: auto;
+		        }
+		      .botonera {
+				    width: 100%;
+				    display: flex;
+				    justify-content: space-between;
+					}
+		</style>
+	</head>
+	<body>
+		<div class="centrado">
+		  <h1>End of Mythos</h1>
+		  <div class="botonera">
+		  <button class="boton">Menú:</button>
+		  <button class="boton">Home</button>
+		  <button class="boton">Donaciones</button>
+		  <button class="boton">Social</button>
+		  <button class="boton">FAQ</button>
+		  <button class="boton">Info</button>
+		  <button class="boton">Ayuda</button>
+		</div>
+		<div class="container">
+	        <div class="video-container">
+	            <h2>Trailer</h2>
+	            <video width="640" height="360" controls>
+	                <source src="tu_video.mp4" type="video/mp4">
+	                Tu navegador no soporta el elemento de video.
+	            </video>
+	        </div>
+	        <div class="text-container">
+	            <p>
+	            	End of Mythos es un videojuego de acción asimétrico inspirado en juegos como “Monster Hunter” donde el jugador deberá cazar criaturas para progresar a través de una narrativa profunda y enrevesada, a través de la exploración de un mundo semiabierto, donde obtendrá y creará armas y equipamiento a partir de los materiales que rapiñes de tus víctimas.
+				</p>
+	        </div>
+		</div>
+	</body>
 </html>
