@@ -6,150 +6,198 @@
 		<script src="main.js" type="text/javascript"></script>
 		<title>End of Mythos</title>
 		<style>
-			body{
 
-			}
-		  .centrado {
+		    .centrado {
 		    text-align: center;
-		  }
-		  .lado {
-		    text-align: left;
-		  }
-		  .lado2 {
-		    text-align: right;
-		  }
-		  .container img {
-		    max-width: 100%;
-		    max-height: 100%;
-		  }
-		  .box {
-		        display: inline-block;
-		        width: 70px;
-		        height: 70px;
-		        padding: 4px;
-		        background-color: red;
-		        color: white;
-		      }
-		      .boton {
+			}
+			.lado {
+				text-align: left;
+			}
+			.lado2 {
+			   text-align: right;
+			}
+			body {
+			    background: linear-gradient(to bottom, black, red);
+			}
+			.container img {
+			    max-width: 100%;
+			    max-height: 100%;
+			}
+			.contenedor {
+			    height: 100%;
+			    background: linear-gradient(black, red);
+			}
+			.nombre {
+				display: inline-block;
+				width: 270px; 
+			}
+		    .box {
+			    display: inline-block;
+			    width: 70px;
+			    height: 70px;
+			    padding: 4px;
+			    background-color: red;
+		    	color: white;
+		    }
+		    .espacio-largo {
+		   		margin-right: 200px; 
+		    }
+		    .boton {
 			    flex: 1;
 			    margin: 0px;
-			  }
-			  	.container {
-		            display: flex;
-		            flex-direction: row;
-		            justify-content: space-between;
-		            align-items: center;
-		            padding: 20px;
-		        }
+			}
+			.tarea {
+			    display: inline-block;
+			    width: 100px; 
+			}
+			.container {
+		        display: flex;
+		        flex-direction: row;
+		        justify-content: space-between;
+		        align-items: center;
+		        padding: 20px;
+		    }
+		    .video-container {
+		        flex: 1;
+		        margin-right: 20px;
+		    }
+            .text-container {
+		        flex: 1;
+		        margin-left: 20px;
+		    }
 
-		        .video-container {
-		            flex: 1;
-		            margin-right: 20px;
-		        }
-
-		        .text-container {
-		            flex: 1;
-		            margin-left: 20px;
-		        }
-
-		        video {
-		            max-width: 100%;
-		            height: auto;
-		        }
-		      .botonera {
-				    width: 100%;
-				    display: flex;
-				    justify-content: space-between;
-					}
+		    video {
+		        max-width: 100%;
+		        height: auto;
+		    }
+		    .botonera {
+			    width: 100%;
+			    display: flex;
+			    justify-content: space-between;
+			}
 			.corner-text {
-			        top: 0; /* Posición arriba */
-			        left: 0; /* Posición a la derecha */
-			        background-color: #f1f1f1; /* Color de fondo */
-			        padding: 10px; /* Espacio alrededor del texto */
-			        border-bottom-left-radius: 10px; /* Bordes redondeados */
-			        font-size: 10px;
-			    }
-			    .linea-uniforme {
-				    display: block;
-				    margin-left: 40%; /* Ajusta este valor según sea necesario */
-			    }
+			    top: 0; 
+			    left: 0; 
+			    background-color: #f1f1f1; 
+			    padding: 10px; 
+			    border-bottom-left-radius: 10px; 
+			    font-size: 10px;
+			}
+			.linea-uniforme {
+			    display: block;
+			    margin-left: 40%; 
+			}
+			.imagen-reducida {
+			    width: 50%; 
+			    height: auto; 
+			}
 		</style>
 		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
-		<div class="corner-text">
-		    ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio
-			y no representa un producto real. Práctica de Multimedia, 1º GDDV - Curso 23/24
-			(Quintana), URJC. La URJC no se hace responsable del contenido expuesto por el autor.
-		</div>
-		<div class="centrado">
+		<div class="contenedor">
+			<div class="corner-text">
+			    ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio
+				y no representa un producto real. Práctica de Multimedia, 1º GDDV - Curso 23/24
+				(Quintana), URJC. La URJC no se hace responsable del contenido expuesto por el autor.
+			</div>
+			<div class="centrado">
+				<div class="container">
+			  		<img src="imagenes/Banner.jpeg" alt="Banner">
+			  	</div>	
+			  <div class="botonera">
+			  <button class="boton" onclick="CambiarVentana('index.html')">Home</button>
+			  <button class="boton"onclick="CambiarVentana('donaciones.html')">Donaciones</button>
+			  <button class="boton"onclick="CambiarVentana('social.html')">Social</button>
+			  <button class="boton"onclick="CambiarVentana('faq.html')">FAQ</button>
+			  <button class="boton"onclick="CambiarVentana('ayuda.html')">Ayuda</button>
+			</div>
 			<div class="container">
-		  		<img src="imagenes/Banner.jpeg" alt="Descripción de la imagen">
-		  	</div>	
-		  <div class="botonera">
-		  <button class="boton" onclick="CambiarVentana('index.html')">Home</button>
-		  <button class="boton"onclick="CambiarVentana('donaciones.html')">Donaciones</button>
-		  <button class="boton"onclick="CambiarVentana('social.html')">Social</button>
-		  <button class="boton"onclick="CambiarVentana('faq.html')">FAQ</button>
-		  <button class="boton"onclick="CambiarVentana('ayuda.html')">Ayuda</button>
-		</div>
-		<div class="container">
-	        <div class="video-container">
-	            <h2>Trailer</h2>
-	            <video width="640" height="360" controls>
-	                <source src="tu_video.mp4" type="video/mp4">
-	                Tu navegador no soporta el elemento de video.
-	            </video>
-	        </div>
-	        <div class="text-container">
-	            <p>
-	            	End of Mythos es un videojuego de acción asimétrico inspirado en juegos como “Monster Hunter” donde el jugador deberá cazar criaturas para progresar a través de una narrativa profunda y enrevesada, a través de la exploración de un mundo semiabierto, donde obtendrá y creará armas y equipamiento a partir de los materiales que rapiñes de tus víctimas.
-				</p>
-	        </div>
-		</div>
-		<div class="lado">
-			<h3>Características</h3>
-			<hr>
-				<p>
-					-Gameplay metódico pero fluido. Cada monstruo tiene sus ataques y sus zonas seguras, y cada arma tiene sus pros y sus contras. Domina tu favorita, abre tus horizontes o maneja todas para ser un comodín. <br><br>
-
-					-La preparación es vital. No solo curación o trampas, los monstruos tienen debilidades, fortalezas y detalles, así que piénsate bien tu equipamiento antes de acercarte a ellos.  <br><br>
-
-					-Explora con cautela. Asegúrate de que el entorno es favorable antes de pelear con los enemigos.
-					-Más de 40 criaturas distintas, desde la fauna mitológica a nombres que resuenan en las bibliotecas y los papiros. <br><br>
-					-Explora los biomas de tus historias mitológicas favoritas: Desde los jardines de Babilonia al mismísimo Jötunnheim. Aprende sus historias mientras viajas por el mundo, párate a visitarlos! <br><br>
-					-Estilo de animación sólida y firme, para perfeccionar al máximo el aprendizaje y la mejora del jugador. <br><br>
-					-9 tipos de arma distintas, mas 4 estilos de pelea únicos, para poder encontrar tu mejor forma. <br><br>
-					-Progresión Dinámica. A veces, la preparación conlleva que te pases horas en la forja y optimices tu estilo de juego, o tu resistencia, claro… <br><br>
-					-Personaje propio, customizable y variable. Tú eres un Renacido, entre muchos Renacidos. Brilla más alto y forja tu historia, tu trasfondo, tu inmersión. <br><br>
-					-Progresión post-campaña entretenida. No cortes tu aventura una vez cumplas las voluntades que elijas. Sigue labrando tu historia con desafíos y poderes nuevos, así como una experiencia ‘juego nuevo+’.
-				</p>
-		</div>
-		<div class="lado2">
-			<h3>Historia</h3>
-			<hr>
-				<div class="lado">
-					<p>
-						El mundo está cubierto por criaturas titánicas allá a donde vayas, ni siquiera los dioses que las engendraron son capaces de controlar su caótica destrucción. Dragones serpenteantes aterrorizan las costas del Este, Gigantes causan terremotos con cada paso en los gélidos territorios norteños, Masivas cobras acechan en el desierto, Wendigos cazan sin cesar en las tierras del Oeste. Dioses de todos los panteones del mundo se entretienen con la crueldad desmesurada de sus criaturas o piden ayuda buscando recuperar el control sobre ellas. En cualquiera de los casos, solo nosotros podemos decidir romper nuestro destino y reforjarlo con nuestras propias manos.
+		        <div class="video-container">
+		            <h2>Trailer</h2>
+		            <hr>
+		            <video width="640" height="360" controls>
+		                <source src="tu_video.mp4" type="video/mp4">
+		                Tu navegador no soporta el elemento de video.
+		            </video>
+		        </div>
+		        <div class="text-container">
+		            <p>
+		            	End of Mythos es un videojuego de acción asimétrico inspirado en juegos como “Monster Hunter” donde el jugador deberá cazar criaturas para progresar a través de una narrativa profunda y enrevesada, a través de la exploración de un mundo semiabierto, donde obtendrá y creará armas y equipamiento a partir de los materiales que rapiñes de tus víctimas.
 					</p>
-					<p>
-						Eres un Renacido. Tras una ardua pelea contra un Fénix menor, has sido dotado con la capacidad de arder más que el infierno y volver a tu cuerpo a placer, resurgiendo de las cenizas. Eres parte de una aldea en el norte del reino de Castilla, donde formas parte del Gremio de Protección como cazador novato. Otros Renacidos te acogen y te enseñarán tu poder, y cómo usarlo.
-					</p>
-					<p>
-						A lo largo del juego, descubrirás más de qué es ser un Renacido mientras cumples contratos enviados no solo por el gremio, sino tareas urgentes de protección o de ataque que varios dioses te plantean. Las criaturas se reparten por todo el globo, y van del jabalí menor a titanes, cimientos de la sociedad o mismísimos demonios y ángeles, todo en tu propio nombre y en tu voluntad.<br>
-						Estas criaturas podrán ser saqueadas y recolectadas para obtener materiales y crear armas, armaduras, objetos y más. Viniendo de criaturas mitológicas, dicho equipamiento tendrá propiedades y habilidades especiales, claro!
-					</p>
-				</div>
-		</div>
+		        </div>
+			</div>
 			<div class="lado">
-			<h3>Equipo</h3>
-			<hr>
-				<div class="linea-uniforme">Lucía Andrés González &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tarea <br></div>
-				<div class="linea-uniforme">Alberto Cruz Muñoz &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tarea <br></div>
-				<div class="linea-uniforme">Álvaro Hernández Calleja &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tarea <br></div>
-				<div class="linea-uniforme">Lucas Joglar Liebana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tarea <br></div>
-				<div class="linea-uniforme">Marcos Matutes Rapún &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tarea <br></div>
-				<div class="linea-uniforme">Oscar Rodriguez Mari  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tarea <br></div>
-				<div class="linea-uniforme">Samuel Vega De Seoane Ruiz Gimenez &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tarea <br></div>
+				<h2>Características</h2>
+				<hr>
+					<p>
+						-Gameplay metódico pero fluido. Cada monstruo tiene sus ataques y sus zonas seguras, y cada arma tiene sus pros y sus contras. Domina tu favorita, abre tus horizontes o maneja todas para ser un comodín. <br><br>
+
+						-La preparación es vital. No solo curación o trampas, los monstruos tienen debilidades, fortalezas y detalles, así que piénsate bien tu equipamiento antes de acercarte a ellos.  <br><br>
+
+						-Explora con cautela. Asegúrate de que el entorno es favorable antes de pelear con los enemigos.
+						-Más de 40 criaturas distintas, desde la fauna mitológica a nombres que resuenan en las bibliotecas y los papiros. <br><br>
+						-Explora los biomas de tus historias mitológicas favoritas: Desde los jardines de Babilonia al mismísimo Jötunnheim. Aprende sus historias mientras viajas por el mundo, párate a visitarlos! <br><br>
+						-Estilo de animación sólida y firme, para perfeccionar al máximo el aprendizaje y la mejora del jugador. <br><br>
+						-9 tipos de arma distintas, mas 4 estilos de pelea únicos, para poder encontrar tu mejor forma. <br><br>
+						-Progresión Dinámica. A veces, la preparación conlleva que te pases horas en la forja y optimices tu estilo de juego, o tu resistencia, claro… <br><br>
+						-Personaje propio, customizable y variable. Tú eres un Renacido, entre muchos Renacidos. Brilla más alto y forja tu historia, tu trasfondo, tu inmersión. <br><br>
+						-Progresión post-campaña entretenida. No cortes tu aventura una vez cumplas las voluntades que elijas. Sigue labrando tu historia con desafíos y poderes nuevos, así como una experiencia ‘juego nuevo+’.
+					</p>
+			</div>
+			<div class="lado2">
+				<h2>Historia</h2>
+				<hr>
+					<div class="lado">
+						<p>
+							El mundo está cubierto por criaturas titánicas allá a donde vayas, ni siquiera los dioses que las engendraron son capaces de controlar su caótica destrucción. Dragones serpenteantes aterrorizan las costas del Este, Gigantes causan terremotos con cada paso en los gélidos territorios norteños, Masivas cobras acechan en el desierto, Wendigos cazan sin cesar en las tierras del Oeste. Dioses de todos los panteones del mundo se entretienen con la crueldad desmesurada de sus criaturas o piden ayuda buscando recuperar el control sobre ellas. En cualquiera de los casos, solo nosotros podemos decidir romper nuestro destino y reforjarlo con nuestras propias manos.
+						</p>
+						<p>
+							Eres un Renacido. Tras una ardua pelea contra un Fénix menor, has sido dotado con la capacidad de arder más que el infierno y volver a tu cuerpo a placer, resurgiendo de las cenizas. Eres parte de una aldea en el norte del reino de Castilla, donde formas parte del Gremio de Protección como cazador novato. Otros Renacidos te acogen y te enseñarán tu poder, y cómo usarlo.
+						</p>
+						<p>
+							A lo largo del juego, descubrirás más de qué es ser un Renacido mientras cumples contratos enviados no solo por el gremio, sino tareas urgentes de protección o de ataque que varios dioses te plantean. Las criaturas se reparten por todo el globo, y van del jabalí menor a titanes, cimientos de la sociedad o mismísimos demonios y ángeles, todo en tu propio nombre y en tu voluntad.<br>
+							Estas criaturas podrán ser saqueadas y recolectadas para obtener materiales y crear armas, armaduras, objetos y más. Viniendo de criaturas mitológicas, dicho equipamiento tendrá propiedades y habilidades especiales, claro!
+						</p>
+					</div>
+					<div class="lado">
+						<h2>Criaturas</h2>
+				        <hr>
+				        <div class="centrado">
+					        <h3>WENDIGO</h3>
+						        <video width="640" height="360" controls>
+						            <source src="imagenes/wendigovideo.mp4" type="video/mp4">
+						       	    Tu navegador no soporta el elemento de video.
+						        </video>
+						    <h3>SERPIENTE MAYA</h3>
+					        <div class="container">
+					        	<div class="lado">
+							  	<video width="640" height="360" controls>
+						            <source src="imagenes/SerpientemayaVideo.mp4" type="video/mp4">
+						       	    Tu navegador no soporta el elemento de video.
+						        </video>
+							    </div>
+							    <div class="imagen-reducida">
+							    	<img src="imagenes/SERPENTMAYA2.png" alt="smaya">
+								</div>
+					        </div>
+					        <h3>CHIMERA</h3>
+					        <img src="chimera.png" alt="chimera">
+					    </div>
+					</div>	
+				</div>
+				<div class="lado">
+				<h3>Equipo</h3>
+				<hr>
+				<div class="linea-uniforme">
+			        <span class="nombre">Lucía Andrés González</span> <span class="tarea">tarea</span><br>
+			        <span class="nombre">Alberto Cruz Muñoz</span> <span class="tarea">tarea</span><br>
+			        <span class="nombre">Álvaro Hernández Calleja</span> <span class="tarea">tarea</span><br>
+			        <span class="nombre">Lucas Joglar Liebana</span> <span class="tarea">tarea</span><br>
+			        <span class="nombre">Marcos Matutes Rapún</span> <span class="tarea">tarea</span><br>
+			        <span class="nombre">Oscar Rodriguez Mari</span> <span class="tarea">tarea</span><br>
+			        <span class="nombre">Samuel Vega De Seoane Ruiz Gimenez</span> <span class="tarea">tarea</span>
+			    </div>
+			</div>    
 		</div>
 </html>
