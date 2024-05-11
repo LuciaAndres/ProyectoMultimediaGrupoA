@@ -4,6 +4,11 @@ h1{
 	color: blue;
 }
 body {
-    background-image: url('../imagenes/imagen5.jpeg'); 
-    background-size: cover; 
+    margin: 0;
+    padding: 0;
+    background-image: url('imagenes/side background.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
