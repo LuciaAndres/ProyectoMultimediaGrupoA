@@ -109,18 +109,19 @@
 			<p>
 				¿Tienes alguna duda? ¡No dudes en preguntarnos!
 			</p>
-			<div id="disqus_thread"></div>
-			<script>
-			    var disqus_config = function () {
-			        this.page.url = window.location.href;  // Reemplaza window.location.href si estás en una SPA
-			        this.page.identifier = window.location.pathname; // Reemplaza window.location.pathname si estás en una SPA
-			    };
-			    (function() {
-			        var d = document, s = d.createElement('script');
-			        s.src = 'https://proyectomultimediagrupoa-1.disqus.com/embed.js';
-			        s.setAttribute('data-timestamp', +new Date());
-			        (d.head || d.body).appendChild(s);
-			    })();
-			</script>
+			
 		</div>
+		<div id="disqus_thread"></div>
+		<script>
+		    var disqus_config = function () {
+		        this.page.url = window.location.href;  // Reemplaza window.location.href si estás en una SPA
+		        this.page.identifier = window.location.pathname; // Reemplaza window.location.pathname si estás en una SPA
+		    };
+		    (function() {
+		        var d = document, s = d.createElement('script');
+		        s.src = 'https://proyectomultimediagrupoa-1.disqus.com/embed.js';
+		        s.setAttribute('data-timestamp', +new Date());
+		        (d.head || d.body).appendChild(s);
+		    })();
+		</script>
 </html>
