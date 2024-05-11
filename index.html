@@ -17,6 +17,14 @@
 			   text-align: right;
 			}
 			body {
+			    margin: 0;
+			    padding: 0;
+			    background-image: url('imagenes/sidebackground.png'), url('imagenes/sidebackground.png');
+			    background-position: left top, right top;
+			    background-repeat: no-repeat, no-repeat;
+			    background-size: auto, auto; /* Puedes ajustar el tamaño según lo necesites */
+			}
+			body {
 			    background: linear-gradient(to bottom, black, red);
 			}
 			.container img {
@@ -90,6 +98,10 @@
 			.imagen-reducida {
 			    width: 50%; 
 			    height: auto; 
+			}
+			.imagen-reducida {
+			    width: 40%; 
+			    height: 50%; 
 			}
 		</style>
 		<link rel="stylesheet" href="main.css">
@@ -182,7 +194,9 @@
 								</div>
 					        </div>
 					        <h3>CHIMERA</h3>
-					        <img src="chimera.png" alt="chimera">
+					        <div class="imagen-reducida2">
+					        	<img src="imagenes/chimera.png" alt="chimera">
+					   		</div>
 					    </div>
 					</div>	
 				</div>
