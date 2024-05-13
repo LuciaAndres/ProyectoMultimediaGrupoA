@@ -159,7 +159,7 @@ video {
     background-color: aliceblue;
     width: 13.33%;
     float: left;
-    height: 740vh;
+    height: 80vh;
     background-image: url('../imagenes/sidebackground.png');
 }
 
@@ -192,7 +192,7 @@ video {
     background-color: aliceblue;
     width: 13.33%;
     float: right;
-    height: 740vh;
+    height: 80vh;
     background-image: url('../imagenes/sidebackground.png');
     background-size: 100%;
 }
