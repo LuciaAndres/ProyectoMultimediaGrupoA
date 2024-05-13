@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MythosFont';
-    src: url('MythosFont.ttf') format('truetype');
+    src: url('../MythosFont.ttf') format('truetype');
 }
 
 h1 {
@@ -24,19 +24,24 @@ h3 {
 }
 
 .lado {
+    margin-left: 25px;
+    margin-right: 25px;
     text-align: left;
 }
 
 .lado2 {
+    margin-left: 25px;
+    margin-right: 25px;
     text-align: right;
 }
 
 body {
+    color: white;
     margin: 0;
     padding: 0;
     background-repeat: no-repeat;
     background-size: auto;
-    background: linear-gradient(to bottom, black, red);
+    background-color: #2e2a2a;
 }
 
 .container img {
@@ -48,7 +53,6 @@ body {
     height: 100%;
     width: 73.33%;
     margin: 0 auto;
-    background: linear-gradient(black, red);
 }
 
 .nombre {
@@ -109,6 +113,7 @@ video {
 }
 
 .corner-text {
+    color: black;
     top: 0;
     left: 0;
     background-color: #f1f1f1;
@@ -131,11 +136,59 @@ video {
     background-color: aliceblue;
     width: 13.33%;
     float: left;
+    height: 840vh;
+    background-image: url('../imagenes/sidebackground.png');
+}
+#izq2 {
+    background-color: aliceblue;
+    width: 13.33%;
+    float: left;
+    height: 150vh;
+    background-image: url('../imagenes/sidebackground.png');
+}
+
+#izq3 {
+    background-color: aliceblue;
+    width: 13.33%;
+    float: left;
+    height: 52vh;
+    background-image: url('../imagenes/sidebackground.png');
+}
+
+#izq4 {
+    background-color: aliceblue;
+    width: 13.33%;
+    float: left;
     height: 740vh;
     background-image: url('../imagenes/sidebackground.png');
 }
 
+
 #der {
+    background-color: aliceblue;
+    width: 13.33%;
+    float: right;
+    height: 840vh;
+    background-image: url('../imagenes/sidebackground.png');
+    background-size: 100%;
+}
+#der2 {
+    background-color: aliceblue;
+    width: 13.33%;
+    float: right;
+    height: 150vh;
+    background-image: url('../imagenes/sidebackground.png');
+    background-size: 100%;
+}
+#der3 {
+    background-color: aliceblue;
+    width: 13.33%;
+    float: right;
+    height: 52vh;
+    background-image: url('../imagenes/sidebackground.png');
+    background-size: 100%;
+}
+#der4 {
     background-color: aliceblue;
     width: 13.33%;
     float: right;
