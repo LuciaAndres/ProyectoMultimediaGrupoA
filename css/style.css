@@ -136,14 +136,14 @@ video {
     background-color: aliceblue;
     width: 13.33%;
     float: left;
-    height: 1440vh;
+    height: 8750px;
     background-image: url('../imagenes/sidebackground.png');
 }
 #izq2 {
     background-color: aliceblue;
     width: 13.33%;
     float: left;
-    height: 150vh;
+    height: 975px;
     background-image: url('../imagenes/sidebackground.png');
 }
 
@@ -151,7 +151,7 @@ video {
     background-color: aliceblue;
     width: 13.33%;
     float: left;
-    height: 75vh;
+    height: 480px;
     background-image: url('../imagenes/sidebackground.png');
 }
 
@@ -159,7 +159,7 @@ video {
     background-color: aliceblue;
     width: 13.33%;
     float: left;
-    height: 80vh;
+    height: 480px;
     background-image: url('../imagenes/sidebackground.png');
 }
 
@@ -168,7 +168,7 @@ video {
     background-color: aliceblue;
     width: 13.33%;
     float: right;
-    height: 1440vh;
+    height: 8750px;
     background-image: url('../imagenes/sidebackground.png');
     background-size: 100%;
 }
@@ -176,7 +176,7 @@ video {
     background-color: aliceblue;
     width: 13.33%;
     float: right;
-    height: 150vh;
+    height: 975px;
     background-image: url('../imagenes/sidebackground.png');
     background-size: 100%;
 }
@@ -184,7 +184,7 @@ video {
     background-color: aliceblue;
     width: 13.33%;
     float: right;
-    height: 75vh;
+    height: 480px;
     background-image: url('../imagenes/sidebackground.png');
     background-size: 100%;
 }
@@ -192,7 +192,7 @@ video {
     background-color: aliceblue;
     width: 13.33%;
     float: right;
-    height: 80vh;
+    height: 480px;
     background-image: url('../imagenes/sidebackground.png');
     background-size: 100%;
 }
