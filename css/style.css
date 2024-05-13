@@ -136,7 +136,7 @@ video {
     background-color: aliceblue;
     width: 13.33%;
     float: left;
-    height: 840vh;
+    height: 1440vh;
     background-image: url('../imagenes/sidebackground.png');
 }
 #izq2 {
@@ -168,7 +168,7 @@ video {
     background-color: aliceblue;
     width: 13.33%;
     float: right;
-    height: 840vh;
+    height: 1440vh;
     background-image: url('../imagenes/sidebackground.png');
     background-size: 100%;
 }
