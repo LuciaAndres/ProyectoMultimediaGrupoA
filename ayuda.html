@@ -89,39 +89,41 @@
 		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
-		<div class="corner-text">
-		    ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio
-			y no representa un producto real. Práctica de Multimedia, 1º GDDV - Curso 23/24
-			(Quintana), URJC. La URJC no se hace responsable del contenido expuesto por el autor.
-		</div>
-		<div class="centrado">
-		   <div class="container">
-		  		<img src="imagenes/Banner.jpeg" alt="Descripción de la imagen">
-		  </div>
-		  <div class="botonera">
-		  <button class="boton" onclick="CambiarVentana('index.html')">Home</button>
-		  <button class="boton"onclick="CambiarVentana('donaciones.html')">Donaciones</button>
-		  <button class="boton"onclick="CambiarVentana('social.html')">Social</button>
-		  <button class="boton"onclick="CambiarVentana('faq.html')">FAQ</button>
-		  <button class="boton"onclick="CambiarVentana('ayuda.html')">Ayuda</button>
-		</div>
 		<div>
-			<p>
-				¿Tienes alguna duda? ¡No dudes en preguntarnos!
-			</p>
-			
+			<div class="corner-text">
+			    ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio
+				y no representa un producto real. Práctica de Multimedia, 1º GDDV - Curso 23/24
+				(Quintana), URJC. La URJC no se hace responsable del contenido expuesto por el autor.
+			</div>
+			<div class="centrado">
+			   <div class="container">
+			  		<img src="imagenes/Banner.jpeg" alt="Descripción de la imagen">
+			  </div>
+			  <div class="botonera">
+			  <button class="boton" onclick="CambiarVentana('index.html')">Home</button>
+			  <button class="boton"onclick="CambiarVentana('donaciones.html')">Donaciones</button>
+			  <button class="boton"onclick="CambiarVentana('social.html')">Social</button>
+			  <button class="boton"onclick="CambiarVentana('faq.html')">FAQ</button>
+			  <button class="boton"onclick="CambiarVentana('ayuda.html')">Ayuda</button>
+			</div>
+			<div>
+				<p>
+					¿Tienes alguna duda? ¡No dudes en preguntarnos!
+				</p>
+				
+			</div>
+			<div id="disqus_thread"></div>
+			<script>
+			    var disqus_config = function () {
+			        this.page.url = window.location.href;  // Reemplaza window.location.href si estás en una SPA
+			        this.page.identifier = window.location.pathname; // Reemplaza window.location.pathname si estás en una SPA
+			    };
+			    (function() {
+			        var d = document, s = d.createElement('script');
+			        s.src = 'https://proyectomultimediagrupoa-1.disqus.com/embed.js';
+			        s.setAttribute('data-timestamp', +new Date());
+			        (d.head || d.body).appendChild(s);
+			    })();
+			</script>
 		</div>
-		<div id="disqus_thread"></div>
-		<script>
-		    var disqus_config = function () {
-		        this.page.url = window.location.href;  // Reemplaza window.location.href si estás en una SPA
-		        this.page.identifier = window.location.pathname; // Reemplaza window.location.pathname si estás en una SPA
-		    };
-		    (function() {
-		        var d = document, s = d.createElement('script');
-		        s.src = 'https://proyectomultimediagrupoa-1.disqus.com/embed.js';
-		        s.setAttribute('data-timestamp', +new Date());
-		        (d.head || d.body).appendChild(s);
-		    })();
-		</script>
 </html>
